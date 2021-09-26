@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/postdetails",
+      "handler": "postdetail.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/postdetails/count",
+      "handler": "postdetail.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/postdetails/:id",
+      "handler": "postdetail.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/postdetails",
+      "handler": "postdetail.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/postdetails/:id",
+      "handler": "postdetail.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/postdetails/:id",
+      "handler": "postdetail.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

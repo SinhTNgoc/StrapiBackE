@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "postdetails",
+  "info": {
+    "name": "postdetail"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

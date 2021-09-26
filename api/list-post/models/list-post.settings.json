@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "list_posts",
+  "info": {
+    "name": "ListPost",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "subtitle1": {
+      "type": "string"
+    },
+    "subtitle2": {
+      "type": "string"
+    },
+    "subtitle3": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "date"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "list_posts"
+    }
+  }
+}
